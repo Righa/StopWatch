@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:background="@color/colorAccent"
     tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
 
     <TextView
         android:id="@+id/time_view"
@@ -13,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
         android:textSize="92sp" />
@@ -24,7 +30,9 @@
         android:layout_below="@id/time_view"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onClickStart"
+        android:textColor="@color/colorAccent"
         android:text="@string/start" />
 
     <Button
@@ -34,7 +42,9 @@
         android:layout_below="@id/start_button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onClickStop"
+        android:textColor="@color/colorAccent"
         android:text="@string/stop" />
 
     <Button
@@ -44,7 +54,10 @@
         android:layout_below="@id/stop_button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onClickReset"
+        android:textColor="@color/colorAccent"
         android:text="@string/reset" />
-
 </RelativeLayout>
+
+</ScrollView>
